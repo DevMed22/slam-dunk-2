@@ -11,7 +11,7 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --font-default:  "Inter", sans-serif;
+  --font-default: "Inter", sans-serif;
   --font-primary: "Montserrat", sans-serif;
   --font-secondary: "Poppins", sans-serif;
 }
@@ -20,7 +20,7 @@
 :root {
   --color-default: #222222;
   --color-primary: darkred;
-  --color-secondary:white ;
+  --color-secondary: white;
 }
 
 /* Smooth scroll behavior */
@@ -56,175 +56,175 @@ h6 {
 }
 
 .fut-player-card {
-	position: relative;
-	width: 300px;
-	height: 485px;
-	background-image: url(https://selimdoyranli.com/cdn/fut-player-card/img/card_bg.png);
-	background-position: center center;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	padding: 3.8rem 0;
-	z-index: 2;
-	-webkit-transition: 200ms ease-in;
-	-o-transition: 200ms ease-in;
-	transition: 200ms ease-in;
+  position: relative;
+  width: 300px;
+  height: 485px;
+  background-image: url(https://selimdoyranli.com/cdn/fut-player-card/img/card_bg.png);
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 3.8rem 0;
+  z-index: 2;
+  -webkit-transition: 200ms ease-in;
+  -o-transition: 200ms ease-in;
+  transition: 200ms ease-in;
   margin: auto;
 }
 
 .fut-player-card .player-card-top {
-	position: relative;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	color: #e9cc74;
-	padding: 0 1.5rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #e9cc74;
+  padding: 0 1.5rem;
 }
 
 .fut-player-card .player-card-top .player-master-info {
-	position: absolute;
-	line-height: 2.2rem;
-	font-weight: 300;
-	padding: 1.5rem 0;
-	text-transform: uppercase;
+  position: absolute;
+  line-height: 2.2rem;
+  font-weight: 300;
+  padding: 1.5rem 0;
+  text-transform: uppercase;
 }
 
 .fut-player-card .player-card-top .player-master-info .player-rating {
-	font-size: 2rem;
+  font-size: 2rem;
 }
 
 .fut-player-card .player-card-top .player-master-info .player-position {
-	font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .fut-player-card .player-card-top .player-master-info .player-nation {
-	display: block;
-	width: 2rem;
-	height: 25px;
-	margin: 0.3rem 0;
+  display: block;
+  width: 2rem;
+  height: 25px;
+  margin: 0.3rem 0;
 }
 
 .fut-player-card .player-card-top .player-master-info .player-nation img {
-	width: 100%;
-	height: 100%;
-	-o-object-fit: contain;
-	object-fit: contain;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .fut-player-card .player-card-top .player-master-info .player-club {
-	display: block;
-	width: 2.1rem;
-	height: 40px;
+  display: block;
+  width: 2.1rem;
+  height: 40px;
 }
 
 .fut-player-card .player-card-top .player-master-info .player-club img {
-	width: 100%;
-	height: 100%;
-	-o-object-fit: contain;
-	object-fit: contain;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .fut-player-card .player-card-top .player-picture {
-	width: 200px;
-	height: 200px;
-	margin: 0 auto;
-	overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .fut-player-card .player-card-top .player-picture img {
-	width: 100%;
-	height: 100%;
-	-o-object-fit: contain;
-	object-fit: contain;
-	position: relative;
-	right: -1.5rem;
-	bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  position: relative;
+  right: -1.5rem;
+  bottom: 0;
 }
 
 .fut-player-card .player-card-top .player-picture .player-extra {
-	position: absolute;
-	right: 0;
-	bottom: -0.5rem;
-	overflow: hidden;
-	font-size: 1rem;
-	font-weight: 700;
-	text-transform: uppercase;
-	width: 100%;
-	height: 2rem;
-	padding: 0 1.5rem;
-	text-align: right;
-	background: none;
+  position: absolute;
+  right: 0;
+  bottom: -0.5rem;
+  overflow: hidden;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  padding: 0 1.5rem;
+  text-align: right;
+  background: none;
 }
 
 .fut-player-card .player-card-top .player-picture .player-extra span {
-	margin-left: 0.6rem;
-	text-shadow: 2px 2px #333;
+  margin-left: 0.6rem;
+  text-shadow: 2px 2px #333;
 }
 
 .fut-player-card .player-card-bottom {
-	position: relative;
+  position: relative;
 }
 
 .fut-player-card .player-card-bottom .player-info {
-	display: block;
-	padding: 0.3rem 0;
-	color: #e9cc74;
-	width: 90%;
-	margin: 0 auto;
-	height: auto;
-	position: relative;
-	z-index: 2;
+  display: block;
+  padding: 0.3rem 0;
+  color: #e9cc74;
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  position: relative;
+  z-index: 2;
 }
 
 .fut-player-card .player-card-bottom .player-info .player-name {
-	width: 100%;
-	display: block;
-	text-align: center;
-	font-size: 1.6rem;
-	text-transform: uppercase;
-	border-bottom: 2px solid rgba(233, 204, 116, 0.1);
-	padding-bottom: 0.3rem;
-	overflow: hidden;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgba(233, 204, 116, 0.1);
+  padding-bottom: 0.3rem;
+  overflow: hidden;
 }
 
 .fut-player-card .player-card-bottom .player-info .player-name span {
-	display: block;
-	text-shadow: 2px 2px #111;
+  display: block;
+  text-shadow: 2px 2px #111;
 }
 
 .fut-player-card .player-card-bottom .player-info .player-features {
-	margin: 0.5rem auto;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+  margin: 0.5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .fut-player-card .player-card-bottom .player-info .player-features .player-features-col {
-	border-right: 2px solid rgba(233, 204, 116, 0.1);
-	padding: 0 2.3rem;
+  border-right: 2px solid rgba(233, 204, 116, 0.1);
+  padding: 0 2.3rem;
 }
 
 .fut-player-card .player-card-bottom .player-info .player-features .player-features-col span {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	font-size: 1.2rem;
-	text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 .fut-player-card .player-card-bottom .player-info .player-features .player-features-col span .player-feature-value {
-	margin-right: 0.3rem;
-	font-weight: 700;
+  margin-right: 0.3rem;
+  font-weight: 700;
 }
 
 .fut-player-card .player-card-bottom .player-info .player-features .player-features-col span .player-feature-title {
-	font-weight: 300;
+  font-weight: 300;
 }
 
 .fut-player-card .player-card-bottom .player-info .player-features .player-features-col:last-child {
-	border: 0;
+  border: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1664,51 +1664,56 @@ section {
 # Recent Blog Posts Section
 --------------------------------------------------------------*/
 .recent-posts article {
-    box-shadow: 0 4px 16px rgb(0 0 0 / 90%);
-    background-color: #198754;
-    padding: 30px;
-    height:100%;
-    border-top-left-radius: 200px;
-    border-top-right-radius: 200px;
-    border-bottom-left-radius: 700px;
-    border-bottom-right-radius: 700px;
-    overflow: hidden;
-    font-family: auto;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 90%);
+  background-color: #198754;
+  padding: 30px;
+  height: 100%;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 700px;
+  border-bottom-right-radius: 700px;
+  overflow: hidden;
+  font-family: auto;
 }
 
 .recent-posts .post-img {
   max-height: 280px;
-  width:auto;
+  width: auto;
   margin-left: -13px;
   margin-right: -9px;
   overflow: hidden;
   display: flex;
 }
-.recent-posts .post-img .left-hand{
-    text-align: left;
-    margin-right: 12px;
-    margin-top: 25px;
-    font-family: fantasy;
-    color: #000;
+
+.recent-posts .post-img .left-hand {
+  text-align: left;
+  margin-right: 12px;
+  margin-top: 25px;
+  font-family: fantasy;
+  color: #000;
 }
-.recent-posts .post-img .right-hand{
+
+.recent-posts .post-img .right-hand {
   text-align: right;
   margin-left: 12px;
   margin-top: 33px;
   font-family: fantasy;
 }
-.recent-posts .post-img .right-hand img{
+
+.recent-posts .post-img .right-hand img {
   width: 30px;
   border-radius: 13px;
 }
+
 .recent-posts .post-img .between img {
- text-align: center;
- height: 150px;
- width: 200px;
- border-radius: 20px;
- 
+  text-align: center;
+  height: 150px;
+  width: 200px;
+  border-radius: 20px;
+
 }
-.recent-posts p{
+
+.recent-posts p {
   margin-top: -32px;
   margin-bottom: 2px;
   font-family: fantasy;
@@ -1716,6 +1721,7 @@ section {
   color: #000;
 
 }
+
 .recent-posts .post-category {
   font-size: 16px;
   color: #6f6f6f;
@@ -1739,23 +1745,25 @@ section {
   color: var(--color-primary);
 }
 
-.recent-posts .post-meta  {
+.recent-posts .post-meta {
   width: 45px;
   border-radius: 50%;
   margin-right: 15px;
   display: flex;
   font-size: small;
 }
+
 .recent-posts .post-meta .post-author pre {
   width: 45px;
   font-size: x-small;
-  font-family:cursive ;
- 
+  font-family: cursive;
+
 }
 
-.row .col{
+.row .col {
   width: 20%;
 }
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
@@ -1979,7 +1987,7 @@ section {
   margin-left: 25px;
   color: black;
   font-weight: 600;
-  
+
 }
 
 .hero .btn-watch-video i {
@@ -2175,10 +2183,12 @@ section {
   overflow: hidden;
   border-radius: 10px 10px 0 0;
 }
-.blog .blog-details .post-img img{
+
+.blog .blog-details .post-img img {
   display: flex;
   width: 100%;
 }
+
 .blog .blog-details .title {
   font-size: 28px;
   font-weight: 700;
@@ -2731,4 +2741,30 @@ section {
 
 .footer .credits a {
   color: #fff;
+}
+
+
+.php-email-form input {
+  border-radius: 4px;
+  padding: 10px 10px;
+  font-size: 14px;
+  display: inline-flex;
+  margin-bottom: 10px;
+  width: 180px;
+}
+
+.php-email-form label {
+  padding: 10px 10px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 180px;
+}
+
+
+.formclass {
+  margin-top: 30px;
+  padding: 30px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }

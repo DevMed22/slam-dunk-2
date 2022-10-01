@@ -1,9 +1,69 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %}
-    <title>Home</title>
+<title>Home</title>
 {% endblock title %}
 
 {% block content %}
-    <h1>Home</h1>
+
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="hero">
+    <div class="container position-relative">
+        <main id="main">
+
+            <!-- ======= Portfolio Details Section ======= -->
+            <section id="portfolio-details" class="portfolio-details">
+                <div class="container" data-aos="fade-up">
+
+                    <div class="position-relative h-100">
+                        <div class="slides-1 portfolio-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+
+                                <div class="swiper-slide">
+                                    <img src="{% static 'img/portfolio/app-1.jpg' %}" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="{% static 'img/portfolio/product-1.jpg' %} " alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="{% static 'img/portfolio/branding-1.jpg' %}" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="{% static 'img/portfolio/books-1.jpg' %}" alt="">
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+
+                </div>
+            </section><!-- End Portfolio Details Section -->
+
+        </main><!-- End #main -->
+        <h2>Welcome to <span>Soccer Vizualisation</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eaque ea accusamus id corporis facere!
+            Ipsum esse nostrum totam nulla. Sapiente ipsa impedit explicabo suscipit
+            consequatur vel quibusdam dicta reprehenderit!.</p>
+        <div style="display: flex; text-align:center;">
+            <a href="#about" class="btn-get-started">Get Started</a>
+            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+                class="glightbox btn-watch-video d-flex align-items-center">
+                <i class="bi bi-play-circle"></i><span>Watch News</span></a>
+        </div>
+    </div>
+
+    </div>
+</section>
+<!-- End Hero Section -->
+
+
+
 {% endblock content %}
