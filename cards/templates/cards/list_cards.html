@@ -15,7 +15,7 @@
 <!-- ======= Players cards Section ======= -->
 <section id="cards" class="recent-posts sections-bg">
 
-
+    <p><a href="{% url 'create_card' %}">Create your own card</a></p>
 
     <div class="row gy-4">
         {% for card in cards_list %}
@@ -24,23 +24,19 @@
             <div class="player-card-top">
                 <div class="player-master-info">
                     <div class="player-rating">
-                        <span>97</span>
+                        <span>{{card.DRI}}</span>
                     </div>
                     <div class="player-position">
-                        <span>RW</span>
+                        <span>{{card.position}}</span>
                     </div>
-                    <div class="player-nation">
-                        <img src="https://selimdoyranli.com/cdn/fut-player-card/img/argentina.svg" alt="Argentina"
-                            draggable="false" />
-                    </div>
-                    <div class="player-club">
-                        <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="Barcelona"
-                            draggable="false" />
-                    </div>
+
                 </div>
                 <div class="player-picture">
-                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/messi.png" alt="Messi"
-                        draggable="false" />
+                    {% if card.img %}
+                    <img src="{{ card.img.url }}" alt="{{card.name}}" draggable="false" />
+                    {% else %}
+                    <h3>no img</h3>
+                    {% endif %}
                     <div class="player-extra">
                         <span>4*SM</span>
                         <span>4*WF</span>
@@ -57,29 +53,29 @@
                     <div class="player-features">
                         <div class="player-features-col">
                             <span>
-                                <div class="player-feature-value">97</div>
+                                <div class="player-feature-value">{{card.PAC}}</div>
                                 <div class="player-feature-title">PAC</div>
                             </span>
                             <span>
-                                <div class="player-feature-value">95</div>
+                                <div class="player-feature-value">{{card.SHO}}</div>
                                 <div class="player-feature-title">SHO</div>
                             </span>
                             <span>
-                                <div class="player-feature-value">94</div>
+                                <div class="player-feature-value">{{card.PAS}}</div>
                                 <div class="player-feature-title">PAS</div>
                             </span>
                         </div>
                         <div class="player-features-col">
                             <span>
-                                <div class="player-feature-value">99</div>
+                                <div class="player-feature-value">{{card.DRI}}</div>
                                 <div class="player-feature-title">DRI</div>
                             </span>
                             <span>
-                                <div class="player-feature-value">35</div>
+                                <div class="player-feature-value">{{card.DEF}}</div>
                                 <div class="player-feature-title">DEF</div>
                             </span>
                             <span>
-                                <div class="player-feature-value">68</div>
+                                <div class="player-feature-value">{{card.PHY}}</div>
                                 <div class="player-feature-title">PHY</div>
                             </span>
                         </div>
