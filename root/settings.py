@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'accounts.apps.AccountsConfig',
     'cards.apps.CardsConfig',  #cards
+    'comps.apps.CompsConfig',
 ]
 
 MIDDLEWARE = [
