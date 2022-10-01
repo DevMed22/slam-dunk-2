@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load static %}
+{% block title %}
+<title>Create Card</title>
+{% endblock title %}
+
+{% block content %}
+
+<div class="formclass">
+<form class="php-email-form" method="post">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="add player">
+</form>
+</div>
+
+{% endblock content %}
