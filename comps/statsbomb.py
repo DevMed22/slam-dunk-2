@@ -25,7 +25,11 @@ season_id = com['season_id']
 com_dict = dict(zip(com_name,com_id))
 season_dict = dict(zip(season_name,season_id))
 
-x = sb.matches(competition_id=com_dict['La Liga'], season_id=season_dict['2018/2019'])
+def get_comp(season, comp):
+  print(comp, season)
+  x=sb.matches(competition_id=com_dict[comp], season_id=season_dict[season])
+  
+  return x
 
 
 def matches_id(data):
