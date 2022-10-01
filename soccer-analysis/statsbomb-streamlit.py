@@ -188,7 +188,7 @@ def away_team_passes(events, away_team, match_id):
 
 
 ## streamlit app
-
+st.title('Discover the competition like couches 😉')
 competition = st.selectbox('Choose the competition', (com_dict.keys()))
 
 season = st.selectbox('Choose the season', (season_dict.keys()))
