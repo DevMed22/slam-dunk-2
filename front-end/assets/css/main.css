@@ -1171,7 +1171,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
-  padding: 25px 20px;
+  padding: 50px 20px;
   background-color: #fff;
   position: relative;
   border-top: 1px solid #f3f3f3;
@@ -1256,7 +1256,7 @@ section {
 }
 
 .portfolio-details .portfolio-info h3 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -1269,30 +1269,11 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--color-primary);
+  background:none;
   left: 0;
   bottom: 0;
 }
 
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 15px;
-  font-size: 16px;
-}
-
-.portfolio-details .portfolio-info ul strong {
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #9c9c9c;
-  font-size: 12px;
-}
 
 .portfolio-details .portfolio-info .btn-visit {
   padding: 8px 40px;
@@ -1302,9 +1283,7 @@ section {
   transition: 0.3s;
 }
 
-.portfolio-details .portfolio-info .btn-visit:hover {
-  background: #009d8b;
-}
+
 
 .portfolio-details .portfolio-description h2 {
   font-size: 26px;
@@ -1754,7 +1733,7 @@ section {
 }
 
 .row .col{
-  width: 20%;
+ width :50%;
 }
 /*--------------------------------------------------------------
 # Contact Section
