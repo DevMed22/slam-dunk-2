@@ -48,7 +48,7 @@
                     <li class="dropdown"><a href="#news"><span>News</span> </a></li>
 
                     <li><a href="#">Competitions</a></li>
-                    <li><a href="#cards">Cards</a></li>
+                    <li><a href="{% url 'list_card' %}">Cards</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                     {% if user.is_authenticated %}
                     <li>Hi {{ user.username }}</li>
