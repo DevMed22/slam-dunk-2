@@ -28,6 +28,23 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER='djangogeeks2@gmail.com'
+EMAIL_HOST_PASSWORD='fbqxctfsnkgtjtto'
+RECIPIENT_ADDRESS='anasosama914@gmail.com'
+
+
+
+
+
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,10 +54,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
     'pages.apps.PagesConfig',
     'accounts.apps.AccountsConfig',
     'cards.apps.CardsConfig',  #cards
     'comps.apps.CompsConfig',
+    'posts.apps.PostsConfig',
+    'contact.apps.ContactConfig',
 ]
 
 MIDDLEWARE = [

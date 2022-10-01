@@ -1,0 +1,16 @@
+<form action="{% url 'result' %}" method="post">
+  {% csrf_token %}
+  <select name="comp" id="">
+    {% for c in comps.keys %}
+    <option value="{{c}}">{{c}}</option>
+    {% endfor %}
+  </select>
+
+  <select name="season" id="">
+    {% for c in ses.keys %}
+    <option value="{{c}}">{{c}}</option>
+    {% endfor %}
+  </select>
+  
+  <button type="submit">Submit</button>
+</form>
