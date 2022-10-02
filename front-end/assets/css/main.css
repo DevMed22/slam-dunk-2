@@ -1115,15 +1115,16 @@ section {
     left: auto;
   }
 }
-
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+
 .portfolio .portfolio-flters {
   padding: 0 0 20px 0;
   margin: 0 auto;
   list-style: none;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .portfolio .portfolio-flters li {
@@ -1158,12 +1159,11 @@ section {
 }
 
 .portfolio .portfolio-wrap {
-  box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   height: 100%;
   overflow: hidden;
 }
-
 
 .portfolio .portfolio-wrap img {
   transition: 0.3s;
@@ -1172,7 +1172,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
-  padding: 50px 20px;
+  padding: 25px 20px;
   background-color: #fff;
   position: relative;
   border-top: 1px solid #f3f3f3;
@@ -1204,6 +1204,7 @@ section {
 .portfolio .portfolio-wrap:hover img {
   transform: scale(1.1);
 }
+
 
 /*--------------------------------------------------------------
 # Portfolio Details Section
