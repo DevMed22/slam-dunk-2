@@ -199,10 +199,25 @@ sub_2 = st.button('Analyze')
 if sub_2:
     home_team, away_team, home_score, away_score, stadium, home_manager, away_manager, comp_stats = match_data(
         data, matches_idx[match])
-    st.write(home_team, away_team, home_score, away_score, stadium, home_manager, away_manager, comp_stats)
     home_lineup, away_lineup = lineups(home_team, away_team, data=sb.lineups(match_id=matches_id[match]))
-    st.subheader('Lineups')
-    st.write(home_lineup, away_lineup)
+    st.subheader(f'{home_team} {home_score} : {away_score} {away_team}')
+    st.subheader(f'{home_team}')
+    st.write(f'Goals: {home_score}')
+    st.write(f'Manager: {home_manager}')
+    st.write(f'Lineup:')
+    st.write(f'{home_lineup}')
+    st.subheader(f'{away_team}')
+    st.write(f'Goals: {away_score}')
+    st.write(f'Manager: {away_manager}')
+    st.write(f'Lineup: {away_lineup}')
+
+    # st.write(home_team, away_team, home_score, away_score, stadium, home_manager, away_manager, comp_stats)
+    
+    st.subheader(f'{stadium} Stadium')
+    st.subheader(f'{comp_stats} Stage')
+
+    # st.subheader('Lineups')
+    # st.write(home_lineup, away_lineup)
     events = sb.events(match_id=matches_id[match], split=True, flatten_attrs=False)
     st.subheader(f'{home_team} shots vs {away_team} shots')
     shots(events, home_team, away_team, matches_id[match])
