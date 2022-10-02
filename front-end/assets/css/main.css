@@ -1158,11 +1158,12 @@ section {
 }
 
 .portfolio .portfolio-wrap {
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
   border-radius: 10px;
   height: 100%;
   overflow: hidden;
 }
+
 
 .portfolio .portfolio-wrap img {
   transition: 0.3s;
@@ -1642,21 +1643,34 @@ section {
 /*--------------------------------------------------------------
 # Recent Blog Posts Section
 --------------------------------------------------------------*/
-.recent-posts article {
-    box-shadow: 0 4px 16px rgb(0 0 0 / 90%);
-    background-color: #198754;
-    padding: 30px;
-    height:100%;
-    border-top-left-radius: 200px;
-    border-top-right-radius: 200px;
-    border-bottom-left-radius: 700px;
-    border-bottom-right-radius: 700px;
-    overflow: hidden;
-    font-family: auto;
+.portfolio .posts-list  {
+  box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
 }
-
+.portfolio .posts-list article .post-img img {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  height:max-content;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.portfolio .posts-list article h2 {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 10px;
+  line-height: 1;
+  transition: all 0.3s ease-in-out;
+}
 .recent-posts .post-img {
-  max-height: 280px;
+  max-height: 200px;
   width:auto;
   margin-left: -13px;
   margin-right: -9px;
@@ -2093,6 +2107,7 @@ section {
   height: 100%;
   border-radius: 10px;
   overflow: hidden;
+  border-radius: 15px;
 }
 
 .blog .posts-list .post-img {
