@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # # run the app using this line in commnands :streamlit run --theme.base "light" statsbomb.py
-
+# streamlit run --theme.base "light" statsbomb-streamlit.py --server.port 80
 import streamlit as st
 import matplotlib.pyplot as plt
 from statsbombpy import sb
