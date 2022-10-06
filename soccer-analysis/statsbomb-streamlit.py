@@ -200,19 +200,25 @@ if sub_2:
     home_team, away_team, home_score, away_score, stadium, home_manager, away_manager, comp_stats = match_data(
         data, matches_idx[match])
     home_lineup, away_lineup = lineups(home_team, away_team, data=sb.lineups(match_id=matches_id[match]))
-    st.subheader(f'{home_team} {home_score} : {away_score} {away_team}')
-    st.subheader(f'{home_team}')
-    st.write(f'Goals: {home_score}')
-    st.write(f'Manager: {home_manager}')
-    st.write(f'Lineup:')
-    st.write(f'{home_lineup}')
-    st.subheader(f'{away_team}')
-    st.write(f'Goals: {away_score}')
-    st.write(f'Manager: {away_manager}')
-    st.write(f'Lineup: {away_lineup}')
+    col1, col2, col3 = st.columns([2, 1, 2])
+    # st.subheader(f'{home_team} {home_score} : {away_score} {away_team}')
+    col1.subheader(f'{home_team}')
+    col1.markdown(f'### \t{home_score}')
+    col2.subheader('\n')
+    col2.subheader('Goals')
+    col2.subheader('Manager\n')
+    col1.write(f'\n {home_manager}')
+    col2.subheader(f'Lineup ')
+    for i in range(len(home_lineup)):
+        col1.write('\n \n \n')
+        col1.write(f'- {home_lineup[i]}')
+    col3.subheader(f'\n{away_team}')
+    col3.markdown(f'### \t{away_score}')
+    col3.write(f'\n {away_manager}')
+    for i in range(len(away_lineup)):
+        col3.write('\n \n \n')
+        col3.write(f'- {away_lineup[i]}')
 
-    # st.write(home_team, away_team, home_score, away_score, stadium, home_manager, away_manager, comp_stats)
-    
     st.subheader(f'{stadium} Stadium')
     st.subheader(f'{comp_stats} Stage')
 
